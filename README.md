@@ -1,50 +1,72 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a boilerplate setup for a React application using TypeScript and Vite. The goal is to provide a fast and efficient way to start building React apps with modern tools and best practices.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Installation](#installation)
+- [Running the Development Server](#running-the-development-server)
+- [Building for Production](#building-for-production)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Follow these steps to install and set up the project locally.
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/earlhansg/technical-test.git
+   cd technical-test
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. **Install dependencies:**
+   Run the following command to install the necessary dependencies:
+   ```bash
+   npm install
+   ```
+   or, if you prefer Yarn:
+   ```bash
+   yarn install
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Running the Development Server
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To start the development server and view the application in your browser:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Run the following command:**
+   ```bash
+   npm run dev
+   ```
+   or, if you are using Yarn:
+   ```bash
+   yarn dev
+   ```
+
+2. Once the server is up and running, open your browser and go to:
+   ```
+   http://localhost:3000
+   ```
+
+## Building for Production
+
+To create a production build of the application:
+
+1. **Run the following command:**
+   ```bash
+   npm run build
+   ```
+   or with Yarn:
+   ```bash
+   yarn build
+   ```
+
+2. The production build will be available in the `dist` folder.
+
+## Technologies Used
+
+- **React** - A JavaScript library for building user interfaces.
+- **TypeScript** - A typed superset of JavaScript that provides optional static typing.
+- **Vite** - A fast build tool and development server for modern web projects.
+- **Tailwind CSS** (if you have it integrated) - A utility-first CSS framework for creating custom designs.
