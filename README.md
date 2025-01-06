@@ -1,16 +1,5 @@
 # React + TypeScript + Vite Project
 
-This project is a boilerplate setup for a React application using TypeScript and Vite. The goal is to provide a fast and efficient way to start building React apps with modern tools and best practices.
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Running the Development Server](#running-the-development-server)
-- [Building for Production](#building-for-production)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Installation
 
 Follow these steps to install and set up the project locally.
